@@ -1,6 +1,5 @@
 package sg.edu.np.mad.madpractical5;
 
-import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             btnFollow.setText("Follow");
         }
 
-        dbhandler dbhandler = new dbhandler(this);
+        Databasehandler dbhandler = new Databasehandler(this);
         btnFollow.setOnClickListener(new View.OnClickListener(){
             @Override public void onClick(View v){
                 if (user.followed) {
