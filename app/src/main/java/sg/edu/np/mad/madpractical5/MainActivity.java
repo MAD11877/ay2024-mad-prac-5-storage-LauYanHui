@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             btnFollow.setText("Follow");
         }
 
-        dbHandler dbhandler = new dbHandler(this);
+        DatabaseHandler dbhandler = new DatabaseHandler(this);
         btnFollow.setOnClickListener(new View.OnClickListener(){
             @Override public void onClick(View v){
                 if (user.followed) {
