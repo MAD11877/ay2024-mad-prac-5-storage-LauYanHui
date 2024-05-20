@@ -27,7 +27,7 @@ public class ListActivity extends AppCompatActivity {
             return insets;
         });
 
-        Databasehandler dbhandler = new Databasehandler(this);
+        dbHandler dbhandler = new dbHandler(this);
         List<User> userList = dbhandler.getUser();
 
         UserAdapter userAdapter =  new UserAdapter(userList,this);
